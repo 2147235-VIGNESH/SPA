@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        hr{
+        width: 400px;
+        margin-left: 350px;
+    }
+    * 
+    {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /* box-sizing: border-box;  */
+               
+    }
+    </style>
+</head>
+<body>
+    <div id="head" style="margin-left: 100px;">
+        <div>
+          <hr><h1 style="color: black; font-weight: lighter;margin-left: 450px;">House Information </h1><hr><br> 
+      </div></div>
+    
+    <table>  
+        <tr>
+            <th>Project ID </th>
+            <th>Project Name</th>
+           <th></th>
+            <th style="padding-left: 50px;"> project Status</th>
+        </tr>      
+        <tr  ng-repeat="x in houseinformation | orderBy:'price'"><td>{{x.id }}</td>
+            <td>{{x.name}}</td>
+            <td>{{x.price}}</td>
+            <td  style="padding-left: 50px;"> {{x.projectstatus}}</td></tr>
+    </table>
+        
+
+</body>
+</html>

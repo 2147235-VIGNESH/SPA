@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        hr{
+        width: 400px;
+        margin-left: 350px;
+    }
+    * 
+    {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /* box-sizing: border-box;  */
+               
+    }
+    </style>
+</head>
+<body>
+    <div id="head" style="margin-left: 100px;">
+        <div>
+          <hr><h1 style="color: black; font-weight: lighter;margin-left: 450px;">Project Information </h1><hr><br> 
+      </div></div>
+    <!-- <hr><br><span style="font-size: 25px; margin-left: 450px;">House Information</span><br><hr> -->
+    <table id="houseinfo" cellpadding="2" cellspacing="2" border="1">
+        <tr>
+            <th>Research ID <br>
+            <input type="text" placeholder="Search by id" ng-model="search.id">
+            </th>
+            <th>Research Name<br>
+            <input type="text" placeholder="Search by name" ng-model="search.name"></th>
+            <th>budget<br>
+            <input type="text" placeholder="Search by budget" ng-model="search.budget"></th>
+            <th>Address<br>
+            <input type="text" placeholder="Search by address" ng-model="search.address"></th>            
+            <th>City<br>
+            <input type="text" placeholder="Search by city" ng-model="search.city"></th>
+            <th>project Status<br>
+            <input type="text" placeholder="Search by stauts" ng-model="search.projectstatus"></th>
+            <th>Approve State<br>
+            <input type="text" placeholder="Search by aprrove status" ng-model="search.state"></th>
+        </tr>
+        <tr ng-repeat="item in houseinformation| filter:search | orderBy:'id'">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>&#8377{{item.budget | number:0 }}</td>
+            <td>{{item.address }}</td>
+            <td>{{item.city}}</td>
+            <td>{{item.projectstatus | lowercase}}</td>
+            <td>{{item.state | uppercase}}</td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app="myapp" ng-controller="myctrl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+    <script src="spa.js"></script>
+    <link href="style.css" rel="stylesheet" />
+      
+</head>
+<style>
+    * 
+    {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /* box-sizing: border-box;  */
+               
+    }
+    
+    header{
+    margin-top: -10px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: black;
+    opacity: 0.9;
+    z-index: -5;
+    justify-content: space-between;
+    position: fixed;
+    margin-left: -10px;
+    }
+   
+    a{           
+    width: 260px;
+    font-size: medium;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    background-color:black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+hr{
+        width: 400px;
+        margin-left: 350px;
+    }
+</style>
+<body>
+    <header>
+    <a id="logo" href="Index.html"  
+           style="padding: 25px; font-size: 20px;        
+           color: white;
+           text-decoration: none;
+           cursor: pointer;">Project<span style="color: #62cb6b;">BUDGET</span></a> </header>
+        <br><br><br><br><br>
+    <table style="font-family: Arial">
+    <tr>
+        
+        <td class="leftMenu">
+            <a href="#/home">Home</a>
+            <a href="#/House">Project Details</a>
+            <a href="#/course">OrderBybudget</a>
+        </td> 
+    </tr>
+    <tr>
+        <td class="mainContent">
+            <ng-view></ng-view>
+        </td>
+       
+    </tr>
+</table>
+</body>
+</html>

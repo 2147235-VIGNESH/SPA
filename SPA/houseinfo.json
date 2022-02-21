@@ -1,0 +1,14 @@
+{"record":[
+      {"id":1,"name":"PhD-Physics", "budget":20000000,"address":"#15 ,food street,kormangala","city":"Bangalore","projectstatus":"pending","state":"Approve"},
+      {"id":2,"name":"PhD-Mathematics", "budget":12000000,"address":"#16 ,M street,Mangala","city":"Mysuru","projectstatus":"compleated","state":"Approve"},
+      {"id":3,"name":"PhD-Computer Science", "budget":40000000,"address":"#1 ,MG street,Jangala","city":"Bangalore","projectstatus":"pending","state":"Approve"},
+      {"id":4,"name":"PhD-Chemistry", "budget":10000000,"address":"#1/4 ,hall street,hoskote","city":"Shimoga","projectstatus":"pending","state":"Approve"},
+      {"id":5,"name":"PhD-Psychology", "budget":56000000,"address":"#1/5 ,NG street,Adugodi","city":"Bangalore","projectstatus":"pending","state":"Approve"},
+      {"id":6,"name":"PHD-communication", "budget":34000000,"address":"#0/5 ,JP street,Sagar","city":"Bhilai","projectstatus":"pending","state":"Disapprove"},
+      {"id":7,"name":"PhD-Data Science", "budget":25000000,"address":"#5 ,NM street,SR Nagar","city":"Bangalore","projectstatus":"pending","state":"Approve"},
+      {"id":8,"name":"PhD-Statistics", "budget":60000000,"address":"#115 ,J street,kormangala","city":"Kalaburagi","projectstatus":"pending","state":"Disapprove"},
+      {"id":9,"name":"PhD-Zoology", "budget":20000000,"address":"#15/3 ,K street,kormangala","city":"Kalaburagi","projectstatus":"compleated","state":"Approve"},
+      {"id":10,"name":"PhD-Political Science", "budget":25000000,"address":"#15/1 ,L street,kormangala","city":"Bangalore","projectstatus":"pending","state":"Approve"}
+      
+    ]}
+
